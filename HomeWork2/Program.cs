@@ -58,3 +58,36 @@ int numb = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine(ThirdNumber(numb));
 */
 
+// Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
+
+/*
+bool week(int day)
+{
+    
+    if(day < 8 && day > 0)
+    {
+        if(day > 5)
+    {
+        Console.WriteLine("Hurray! Day off!");
+        return true;
+    }
+    else
+    {
+        Console.WriteLine("Work!");
+        return false;
+    }
+    }
+    else
+    {
+        
+        Console.WriteLine("The days of the week are counted from 1 to 7. Try again.");
+        return false;
+    }
+    
+}
+
+Console.WriteLine("Input a  day of the week: ");
+int DayWeek = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine(week(DayWeek));
+*/
