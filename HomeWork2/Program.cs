@@ -30,3 +30,31 @@ Console.WriteLine(SelectNumber(numb));
 
 // Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 
+/*
+int ThirdNumber(int number)
+{
+    int result = 0;
+
+    if(number >= 100)
+    {
+        while (number > 999)
+        {
+            number = number / 10;
+        }
+        result = number % 10;
+    }
+    else
+    {
+        result = -1;
+        Console.WriteLine("No third digit");
+    }
+
+    return result;
+}
+
+Console.WriteLine("Input a number: ");
+int numb = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine(ThirdNumber(numb));
+*/
+
