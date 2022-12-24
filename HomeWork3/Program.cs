@@ -1,28 +1,32 @@
 ﻿// Задача 19. Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
 /*
-int Number(int numb)
-{
-    
-    int des = numb / 10;
-    int ed = numb % 10;
-    int result = des * 10 + ed;
 
-    if (result == numb) return result;
-    else
-    {
-        int res = -1;
-        Console.WriteLine("Number is not palindrome"); 
-        return res;
-    }    
-    
-      
+bool GetPalindrom(int n)
+{
+  int p = 0; 
+  int nn = n;
+  while(n>0)
+  {
+    p = p*10 + n % 10;
+    n = n / 10;
+  }
+  return p == nn;
 }
 
 Console.Write("Input a number: ");
-int palindrom = Convert.ToInt32(Console.ReadLine());
+int n = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine(Number(palindrom));
+if (GetPalindrom(n))
+{
+  Console.WriteLine("Number is palindrome");
+}
+else
+{
+  Console.WriteLine("Number is not palindrome");
+}
+
 */
+
 // Задача 21. Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
 
 /*
@@ -70,27 +74,5 @@ int n = Convert.ToInt32(Console.ReadLine());
 GetCube(n);
 */
 
-int Number(int numb)
-{
-    
-    int x = numb / 10;
-    int y = numb % 10;
-    int q = x / 10;
-    
-    int result = y * 10 + q;
 
-    if (result == numb) return result;
-    else
-    {
-        int res = -1;
-        Console.WriteLine("Number is not palindrome"); 
-        return res;
-    }    
-    
-      
-}
 
-Console.Write("Input a number: ");
-int palindrom = Convert.ToInt32(Console.ReadLine());
-
-Console.WriteLine(Number(palindrom));
